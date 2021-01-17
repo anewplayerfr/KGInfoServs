@@ -713,7 +713,7 @@ function bindDropinModFileSystemButton(){
     const fsBtn = document.getElementById('settingsDropinFileSystemButton')
     fsBtn.onclick = () => {
         DropinModUtil.validateDir(CACHE_SETTINGS_MODS_DIR)
-        shell.openPath(CACHE_SETTINGS_MODS_DIR)
+        //shell.openPath(CACHE_SETTINGS_MODS_DIR) ( si vous réactivé cette ligne de code les mods seront ON)
     }
     fsBtn.ondragenter = e => {
         e.dataTransfer.dropEffect = 'move'
